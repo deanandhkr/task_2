@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tugas 2 Pemweb</title>
+        <style>
+            h1 {
+                color: tomato;
+            }
+            .form {
+                color: white;
+                background-color: black;
+                padding: 20px;
+            }
+            input[type=number],select{
+                width: 40%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid blue;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=submit] {
+                width: 10%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid blue;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=submit]:hover {
+                background-color: tomato;
+            }
+            .box {
+                padding: 20px;
+            }
+            .box h3,h4 {
+                color: pink;
+            }
+            .layout {
+                background-color: brown;
+                border-radius: 25px;
+                width: 250px;
+                margin: auto;
+            }
+            .header {
+                background-color: black;
+                padding: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <h1 class="header" align="center">Product</h1>
+    <div class="layout" align="center">
+    <div class="box">
+        <img width="200px" src="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/weu/ch/mkt/promotions/huawei-p30-p30pro-sonos-preorder-detail-p30pro.png" alt="p30pro">
+        <h3>Huawei P30 Pro</h3>
+        <h3>Internal 126gb / 256gb</h3>
+        <h4>Rp 6.000.000</h4>
+    </div>
+</div><br>
+    <form action="detail-product.html" method="GET" class="form" align="center">
+        <label for="ram">RAM HP</label><br>
+        <select name="ram" id="ram">
+            <option value="8">8 GB</option>
+            <option value="16">16 GB</option>
+        </select><br><br>
+        <label for="jumlah">Jumlah produk</label><br>
+        <input type="number" name="jumlah"><br><br>
+        <input type="submit" value="order">
+    </form>
+</body>
+</html>
